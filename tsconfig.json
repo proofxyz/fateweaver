@@ -11,13 +11,7 @@
     "types": ["@types/jest"]
   },
   "lib": ["es2022"],
-  "include": [
-    "config/**/*.ts",
-    "src/**/*.ts",
-    "tests/**/*.ts",
-    "bin/*.ts",
-    "jest.config.js"
-  ],
+  "include": ["config/**/*.ts", "src/**/*.ts", "tests/**/*.ts", "bin/*.ts"],
   "exclude": ["node_modules"],
   "watchOptions": {
     "excludeDirectories": ["node_modules"]
