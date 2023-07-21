@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "baseUrl": "./",
+    "outDir": "dist",
+    "rootDirs": ["src"],
+    "strictNullChecks": true
+  },
+  "lib": ["es2022"],
+  "include": ["config/**/*.ts", "src/**/*.ts", "./*.ts", "bin/*.ts"],
+  "exclude": ["node_modules"],
+  "watchOptions": {
+    "excludeDirectories": ["node_modules"]
+  }
+}
