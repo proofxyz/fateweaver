@@ -18,7 +18,7 @@
     "package": "cd output && zip -r Mythics.zip ./images ./json && cd ..",
     "package:chunks": "node dist/bin/package-chunks.js",
     "calculate-summary": "node dist/bin/calculate-summary.js",
-    "clean": "rm -rf output",
+    "clean": "rm -rf output/*",
     "clean:images": "rm -rf output/images"
   },
   "devDependencies": {
