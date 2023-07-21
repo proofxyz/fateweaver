@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@types/cli-progress": "^3.11.0",
+    "@types/jest": "^29.5.3",
     "@types/seedrandom": "^3.0.5",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^6.1.0",
