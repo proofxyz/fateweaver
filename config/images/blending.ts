@@ -1,4 +1,4 @@
-import { formatBlendRules } from "src/images/rules";
+import { formatBlendRules } from "../../src/images/rules";
 
 /**
  * This allows you to specify the blend mode to use when blending the asset with

@@ -4,12 +4,12 @@ import {
   canonicalAttributeNameFromFile,
   extractAttributeName,
   extractTraitName,
-} from "./src/attributes/canonical";
+} from "../src/attributes/canonical";
 import {
   attributeOrder,
   traitProbabilities,
-} from "config/attributes/definitions";
-import { globToRegex } from "src/glob";
+} from "../config/attributes/definitions";
+import { globToRegex } from "../src/glob";
 
 const files = globSync("./assets/**/*.png");
 

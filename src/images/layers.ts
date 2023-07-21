@@ -1,13 +1,13 @@
-import { globToRegex } from "src/glob";
+import { globToRegex } from "../glob";
 import {
   createCanonicalName,
   extractAttributeName,
-} from "src/attributes/canonical";
+} from "../attributes/canonical";
 
-import logger from "src/logger";
-import { AttributeSet } from "src/types";
+import logger from "../logger";
+import { AttributeSet } from "../types";
 import { applyLayerRules } from "./rules";
-import { LAYER_ORDER } from "config/images/layers";
+import { LAYER_ORDER } from "../../config/images/layers";
 
 export type EditableLayer = {
   attribute: string;

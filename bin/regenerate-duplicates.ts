@@ -6,7 +6,7 @@ import { Command } from "@commander-js/extra-typings";
 import seedrandom from "seedrandom";
 import fs from "fs";
 import crypto from "crypto";
-import logger from "src/logger";
+import logger from "../src/logger";
 import cliProgress from "cli-progress";
 
 import { AttributeSet, NftMetadata } from "../src/types";
@@ -16,7 +16,7 @@ import {
   writeToDisk,
 } from "../src/attributes/io";
 import { generateAttributeSet } from "../src/attributes/generate";
-import { processFinalAttributeSet } from "config/attributes/transform";
+import { processFinalAttributeSet } from "../config/attributes/transform";
 
 const program = new Command()
   .option("-s, --seed <string>", "Seed for random number generator")

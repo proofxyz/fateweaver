@@ -4,9 +4,9 @@ import {
   convertFromNftMetadata,
   loadAttributes,
   writeSummaryToDisk,
-} from "src/attributes/io";
-import { NftMetadata } from "src/types";
-import logger from "src/logger";
+} from "../src/attributes/io";
+import { NftMetadata } from "../src/types";
+import logger from "../src/logger";
 
 const attributes = loadAttributes();
 const tokenIdMatcher = /(\d+)\.json$/;

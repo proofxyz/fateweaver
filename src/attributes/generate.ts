@@ -8,10 +8,10 @@ import {
   attributeOrder,
   optionalAttributes,
   traitProbabilities,
-} from "config/attributes/definitions";
-import { globToRegex } from "src/glob";
-import { transformInternalAttributes } from "config/attributes/transform";
-import { RuleSet, mustNotPair, mustPair } from "config/attributes/rules";
+} from "../../config/attributes/definitions";
+import { globToRegex } from "../glob";
+import { transformInternalAttributes } from "../../config/attributes/transform";
+import { RuleSet, mustNotPair, mustPair } from "../../config/attributes/rules";
 
 // Create an array of tuples that stores the original trait definition and the
 // regex version of it.

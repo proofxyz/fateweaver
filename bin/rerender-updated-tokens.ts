@@ -1,8 +1,8 @@
 import { spawnSync } from "child_process";
 import cliProgress from "cli-progress";
-import { generateImageFromAttributes } from "src/images/generate";
-import { loadAttributesFromDisk } from "src/images/io";
-import logger from "src/logger";
+import { generateImageFromAttributes } from "../src/images/generate";
+import { loadAttributesFromDisk } from "../src/images/io";
+import logger from "../src/logger";
 
 const progressBar = new cliProgress.SingleBar(
   {},

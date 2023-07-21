@@ -1,6 +1,6 @@
 import { globSync } from "glob";
 import fs from "fs";
-import { AttributeSet, NftMetadata } from "src/types";
+import { AttributeSet, NftMetadata } from "../types";
 import {
   canonicalAttributeNameFromFile,
   extractAttributeName,
@@ -9,7 +9,7 @@ import {
   optionalAttributes,
   optionalAttributesForSummary,
   traitProbabilities,
-} from "config/attributes/definitions";
+} from "../../config/attributes/definitions";
 import { globToRegex } from "../glob";
 
 export function loadAttributes(): string[] {

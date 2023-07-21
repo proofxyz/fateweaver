@@ -3,7 +3,7 @@ import { createCanvas, loadImage } from "canvas";
 import logger from "../logger";
 import { AttributeSet } from "../types";
 import { processAttributesToLayers } from "./layers";
-import { BLEND_MODE_RULES } from "config/images/blending";
+import { BLEND_MODE_RULES } from "../../config/images/blending";
 
 export async function generateImageFromAttributes(
   tokenId: number,

@@ -2,10 +2,10 @@ import fs from "fs";
 import { Command } from "@commander-js/extra-typings";
 
 import cliProgress from "cli-progress";
-import { ensureOutputDir, loadAttributesFromDisk } from "src/images/io";
-import { generateImageFromAttributes } from "src/images/generate";
-import logger from "src/logger";
-import { globToRegex } from "src/glob";
+import { ensureOutputDir, loadAttributesFromDisk } from "../src/images/io";
+import { generateImageFromAttributes } from "../src/images/generate";
+import logger from "../src/logger";
+import { globToRegex } from "../src/glob";
 
 const progressBar = new cliProgress.SingleBar(
   {},

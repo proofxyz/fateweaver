@@ -1,18 +1,23 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "target": "es6",
     "moduleResolution": "node",
     "sourceMap": true,
-    "baseUrl": "./",
     "outDir": "dist",
     "rootDirs": ["src"],
     "strictNullChecks": true,
     "types": ["@types/jest"]
   },
   "lib": ["es2022"],
-  "include": ["config/**/*.ts", "src/**/*.ts", "./*.ts", "bin/*.ts"],
+  "include": [
+    "config/**/*.ts",
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "bin/*.ts",
+    "jest.config.js"
+  ],
   "exclude": ["node_modules"],
   "watchOptions": {
     "excludeDirectories": ["node_modules"]

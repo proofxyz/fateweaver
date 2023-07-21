@@ -1,7 +1,7 @@
 import { Command } from "@commander-js/extra-typings";
 
-import { loadAttributesFromDisk } from "src/images/io";
-import { generateImageFromAttributes } from "src/images/generate";
+import { loadAttributesFromDisk } from "../src/images/io";
+import { generateImageFromAttributes } from "../src/images/generate";
 
 const program = new Command()
   .requiredOption("--startFrom <number>", "Start from a specific token ID")

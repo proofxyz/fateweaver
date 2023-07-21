@@ -9,16 +9,16 @@ import {
   loadAttributes,
   writeSummaryToDisk,
   writeToDisk,
-} from "src/attributes/io";
-import { generateAttributeSet } from "src/attributes/generate";
+} from "../src/attributes/io";
+import { generateAttributeSet } from "../src/attributes/generate";
 
-import logger from "src/logger";
+import logger from "../src/logger";
 import cliProgress from "cli-progress";
 
-import { AttributeSet } from "src/types";
-import { attributeOrder } from "config/attributes/definitions";
-import { globToRegex } from "src/glob";
-import { processFinalAttributeSet } from "config/attributes/transform";
+import { AttributeSet } from "../src/types";
+import { attributeOrder } from "../config/attributes/definitions";
+import { globToRegex } from "../src/glob";
+import { processFinalAttributeSet } from "../config/attributes/transform";
 
 const progressBar = new cliProgress.SingleBar(
   {},

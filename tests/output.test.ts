@@ -1,7 +1,7 @@
 import fs from "fs";
 import crypto from "crypto";
 
-import { NftMetadata } from "./src/types";
+import { NftMetadata } from "../src/types";
 
 const outputFiles = fs.readdirSync("./output/internal");
 const fileHashes = Object.fromEntries(

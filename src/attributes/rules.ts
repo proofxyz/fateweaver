@@ -1,4 +1,4 @@
-import { globToRegex } from "src/glob";
+import { globToRegex } from "../glob";
 
 /**
  * Formats the RuleSet so that all of the rules are regex.

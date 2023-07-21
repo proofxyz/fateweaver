@@ -1,6 +1,6 @@
 import { EditableLayer, LayerSet } from "./layers";
-import { LAYER_RULES } from "config/images/rules";
-import { globToRegex } from "src/glob";
+import { LAYER_RULES } from "../../config/images/rules";
+import { globToRegex } from "../glob";
 
 /**
  * Given an array of string matchers

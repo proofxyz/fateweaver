@@ -4,11 +4,11 @@ import {
   convertToNftMetadata,
   ensureOutputDir,
   writeToDisk,
-} from "src/attributes/io";
+} from "../src/attributes/io";
 
-import { NftMetadata } from "src/types";
+import { NftMetadata } from "../src/types";
 import cliProgress from "cli-progress";
-import { processFinalAttributeSet } from "config/attributes/transform";
+import { processFinalAttributeSet } from "../config/attributes/transform";
 
 const files = fs.readdirSync("./output/internal");
 const progressBar = new cliProgress.SingleBar(

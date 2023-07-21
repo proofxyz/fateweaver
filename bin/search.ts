@@ -1,8 +1,8 @@
 import { Command, Option } from "@commander-js/extra-typings";
-import { globToRegex } from "src/glob";
+import { globToRegex } from "../src/glob";
 
-import { loadAttributesFromDisk } from "src/images/io";
-import logger from "src/logger";
+import { loadAttributesFromDisk } from "../src/images/io";
+import logger from "../src/logger";
 
 const program = new Command()
   .description(
