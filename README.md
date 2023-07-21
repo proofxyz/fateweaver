@@ -1,4 +1,4 @@
-# NFTGen
+# Fateweaver
 
 This project includes scripts that can be used to randomly generate a NFT collection given a set of rules. It handles both the metadata generation and the actual image creation. Some notable features include:
 
