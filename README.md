@@ -2,6 +2,7 @@
 
 This project includes scripts that can be used to randomly generate a NFT collection given a set of rules. It handles both the metadata generation and the actual image creation. Some notable features include:
 
+- **Battle-tested**: this library was used to generate the [Mythics collection](https://www.proof.xyz/mythics).
 - **Deterministic:** it uses a PRNG that can be seeded with whatever string you want. Every time you generate a collection using the same seed, you will always get the same result.
 - **Flexible trait rules:** trait pairing rules can be defined as either "must pair" or "do not pair" rules. When used together, it's possible to handle most trait pairing restrictions. The rules support a simple glob-style pattern matching that handle most cases, but if needed, you can switch to regex.
 - **Simplicity:** your asset file structure defines the trait naming conventions throughout. All traits are defined as `[attribute]/[trait]`.
