@@ -1,9 +1,11 @@
 import fs from "fs";
+
 import { createCanvas, loadImage } from "canvas";
-import logger from "../logger";
-import { AttributeSet } from "../types";
+
 import { processAttributesToLayers } from "./layers";
 import { BLEND_MODE_RULES } from "../../config/images/blending";
+import logger from "../logger";
+import { AttributeSet } from "../types";
 
 export async function generateImageFromAttributes(
   tokenId: number,

@@ -1,7 +1,13 @@
-import { Command } from "@commander-js/extra-typings";
-import seedrandom from "seedrandom";
 import crypto from "crypto";
 import fs from "fs";
+
+import { Command } from "@commander-js/extra-typings";
+import cliProgress from "cli-progress";
+import seedrandom from "seedrandom";
+
+import { attributeOrder } from "../config/attributes/definitions";
+import { processFinalAttributeSet } from "../config/attributes/transform";
+import { generateAttributeSet } from "../src/attributes/generate";
 import {
   appendSeedHistory,
   convertToNftMetadata,
@@ -10,15 +16,9 @@ import {
   writeSummaryToDisk,
   writeToDisk,
 } from "../src/attributes/io";
-import { generateAttributeSet } from "../src/attributes/generate";
-
-import logger from "../src/logger";
-import cliProgress from "cli-progress";
-
-import { AttributeSet } from "../src/types";
-import { attributeOrder } from "../config/attributes/definitions";
 import { globToRegex } from "../src/glob";
-import { processFinalAttributeSet } from "../config/attributes/transform";
+import logger from "../src/logger";
+import { AttributeSet } from "../src/types";
 
 const progressBar = new cliProgress.SingleBar(
   {},

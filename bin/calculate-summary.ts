@@ -1,13 +1,15 @@
-import { globSync } from "glob";
-import { Command } from "@commander-js/extra-typings";
 import fs from "fs";
+
+import { Command } from "@commander-js/extra-typings";
+import { globSync } from "glob";
+
 import {
   convertFromNftMetadata,
   loadAttributes,
   writeSummaryToDisk,
 } from "../src/attributes/io";
-import { NftMetadata } from "../src/types";
 import logger from "../src/logger";
+import { NftMetadata } from "../src/types";
 
 const program = new Command().description(
   "Re-generate the summaries based on the current metadata on disk"

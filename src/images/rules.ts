@@ -1,5 +1,5 @@
-import { LAYER_RULES } from "../../config/images/rules";
 import { LayerSet } from "./layers";
+import { LAYER_RULES } from "../../config/images/rules";
 
 export function applyLayerRules(layerSet: LayerSet) {
   const newLayerSet = LayerSet.clone(layerSet);

@@ -1,5 +1,5 @@
-import fs from "fs";
 import crypto from "crypto";
+import fs from "fs";
 
 import { NftMetadata } from "../src/types";
 

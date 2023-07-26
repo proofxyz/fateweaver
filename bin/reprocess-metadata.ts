@@ -1,15 +1,18 @@
-import { Command } from "@commander-js/extra-typings";
 import fs from "fs";
+
+import { Command } from "@commander-js/extra-typings";
+import cliProgress from "cli-progress";
+
+import { processFinalAttributeSet } from "../config/attributes/transform";
 import {
   convertFromNftMetadata,
   convertToNftMetadata,
   ensureOutputDir,
   writeToDisk,
 } from "../src/attributes/io";
-
 import { NftMetadata } from "../src/types";
-import cliProgress from "cli-progress";
-import { processFinalAttributeSet } from "../config/attributes/transform";
+
+
 
 new Command()
   .description("Re-generate the final metadata from the internal metadata")

@@ -1,7 +1,4 @@
 import seedrandom from "seedrandom";
-import { AttributeSet } from "../types";
-
-import logger from "../logger";
 
 import { createCanonicalName, extractTraitName } from "./canonical";
 import {
@@ -9,9 +6,11 @@ import {
   optionalAttributes,
   traitProbabilities,
 } from "../../config/attributes/definitions";
-import { globToRegex } from "../glob";
-import { transformInternalAttributes } from "../../config/attributes/transform";
 import { RuleSet, mustNotPair, mustPair } from "../../config/attributes/rules";
+import { transformInternalAttributes } from "../../config/attributes/transform";
+import { globToRegex } from "../glob";
+import logger from "../logger";
+import { AttributeSet } from "../types";
 
 // Create an array of tuples that stores the original trait definition and the
 // regex version of it.

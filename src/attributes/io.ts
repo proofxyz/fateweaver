@@ -1,6 +1,7 @@
-import { globSync } from "glob";
 import fs from "fs";
-import { AttributeSet, NftMetadata } from "../types";
+
+import { globSync } from "glob";
+
 import {
   canonicalAttributeNameFromFile,
   extractAttributeName,
@@ -11,6 +12,7 @@ import {
   traitProbabilities,
 } from "../../config/attributes/definitions";
 import { globToRegex } from "../glob";
+import { AttributeSet, NftMetadata } from "../types";
 
 export function loadAttributes(): string[] {
   const files = globSync("./assets/**/*.png");

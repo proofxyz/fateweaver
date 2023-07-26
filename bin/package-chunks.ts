@@ -1,6 +1,7 @@
-import { Command } from "@commander-js/extra-typings";
 import fs from "fs";
 import { spawnSync } from "node:child_process";
+
+import { Command } from "@commander-js/extra-typings";
 
 const program = new Command()
   .description(

@@ -1,5 +1,4 @@
 import { EditableLayer, LayerSet } from "./layers";
-
 import { globToRegex } from "../glob";
 
 /**

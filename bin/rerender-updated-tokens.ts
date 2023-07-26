@@ -1,6 +1,8 @@
-import { Command } from "@commander-js/extra-typings";
 import { spawnSync } from "child_process";
+
+import { Command } from "@commander-js/extra-typings";
 import cliProgress from "cli-progress";
+
 import { generateImageFromAttributes } from "../src/images/generate";
 import { loadAttributesFromDisk } from "../src/images/io";
 import logger from "../src/logger";

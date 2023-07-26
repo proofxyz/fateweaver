@@ -1,7 +1,7 @@
 import { Command } from "@commander-js/extra-typings";
 
-import { loadAttributesFromDisk } from "../src/images/io";
 import { generateImageFromAttributes } from "../src/images/generate";
+import { loadAttributesFromDisk } from "../src/images/io";
 
 const program = new Command()
   .description(

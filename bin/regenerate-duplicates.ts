@@ -2,21 +2,22 @@
  * This script will continue running until there are no more duplicate
  * outputs.
  */
-import { Command } from "@commander-js/extra-typings";
-import seedrandom from "seedrandom";
-import fs from "fs";
 import crypto from "crypto";
-import logger from "../src/logger";
-import cliProgress from "cli-progress";
+import fs from "fs";
 
-import { AttributeSet, NftMetadata } from "../src/types";
+import { Command } from "@commander-js/extra-typings";
+import cliProgress from "cli-progress";
+import seedrandom from "seedrandom";
+
+import { processFinalAttributeSet } from "../config/attributes/transform";
+import { generateAttributeSet } from "../src/attributes/generate";
 import {
   convertToNftMetadata,
   loadAttributes,
   writeToDisk,
 } from "../src/attributes/io";
-import { generateAttributeSet } from "../src/attributes/generate";
-import { processFinalAttributeSet } from "../config/attributes/transform";
+import logger from "../src/logger";
+import { AttributeSet, NftMetadata } from "../src/types";
 
 const program = new Command()
   .description(

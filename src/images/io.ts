@@ -1,5 +1,7 @@
-import { globSync } from "glob";
 import fs from "fs";
+
+import { globSync } from "glob";
+
 import { AttributeSet, NftMetadata } from "../types";
 
 const TOKEN_ID_REGEX = /(\d+)\.json/;

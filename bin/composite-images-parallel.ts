@@ -1,8 +1,9 @@
 import fs from "fs";
-import { Command } from "@commander-js/extra-typings";
-
 import { spawn } from "node:child_process";
+
+import { Command } from "@commander-js/extra-typings";
 import cliProgress from "cli-progress";
+
 import { ensureOutputDir } from "../src/images/io";
 
 const multibar = new cliProgress.MultiBar(
