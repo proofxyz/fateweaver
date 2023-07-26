@@ -11,6 +11,10 @@ This project includes scripts that can be used to randomly generate a NFT collec
 - **Duplicate avoidance:** a script is provided that searches the collection for duplicates and allows you to re-generate those tokens until no duplicates are left.
 - **Helpful summaries:** generating attributes will create summaries for you so you can see the current state of the collection from a high level.
 
+## Getting started
+
+This project is designed to be modified to fit your needs and is not intended to be used as a library in another program. Because of this, you can simply fork the project on GitHub or download it to get started. I highly recommend reading the rest of the README below before diving in.
+
 ## Important terminology
 
 - **Attribute:** a specific layer on the NFT, e.g. Body, Front Wing, etc.
