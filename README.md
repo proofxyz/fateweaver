@@ -15,9 +15,9 @@ This project includes scripts that can be used to randomly generate a NFT collec
 
 - **Attribute:** a specific layer on the NFT, e.g. Body, Front Wing, etc.
 - **Trait:** a specific attribute value, e.g. Red, Blue, etc.
-- **Attribute set:**: the set of all attributes that makes up an NFT.
+- **Attribute set:** the set of all attributes that makes up an NFT.
 - **Canonical name:** a single string that defines an attribute and trait pair, separated with a "/". For example, `Body/Red`.
-- **PRNG**: pseudo-random number generator. This is the source of randomness used to generate the collection. It can be seeded with any string you want, and will always produce the same result given the same seed.
+- **PRNG:** pseudo-random number generator. This is the source of randomness used to generate the collection. It can be seeded with any string you want, and will always produce the same result given the same seed.
 
 ## Organizing your assets
 
