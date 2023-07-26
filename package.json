@@ -18,7 +18,7 @@
     "composite-images": "node dist/bin/composite-images.js",
     "composite-images-parallel": "node dist/bin/composite-images-parallel.js",
     "rerender-updated-tokens": "node dist/bin/rerender-updated-tokens.js",
-    "package": "cd output && zip -r Mythics.zip ./images ./json && cd ..",
+    "package": "cd output && zip -r Collection.zip ./images ./json && cd ..",
     "package:chunks": "node dist/bin/package-chunks.js",
     "calculate-summary": "node dist/bin/calculate-summary.js",
     "clean": "rm -rf output/*",
