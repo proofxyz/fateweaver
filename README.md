@@ -115,7 +115,7 @@ yarn composite-images-parallel -n 8
 
 ### Command reference
 
-Here's a list of all the commands you can run with Fateweaver:
+Here's a list of all the commands you can run with Fateweaver. Most commands have additional debug output that you can enable by setting `LOG_LEVEL=debug` in your environment.
 
 | Command                          | Description                                                                                                                |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
