@@ -4,6 +4,9 @@ import { loadAttributesFromDisk } from "../src/images/io";
 import { generateImageFromAttributes } from "../src/images/generate";
 
 const program = new Command()
+  .description(
+    "A worker used during parallel image generation. Do not run this directly."
+  )
   .requiredOption("--startFrom <number>", "Start from a specific token ID")
   .requiredOption("--count <number>", "Number of tokens to render")
   .parse();

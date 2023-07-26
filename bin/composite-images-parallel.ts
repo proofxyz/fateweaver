@@ -12,10 +12,9 @@ const multibar = new cliProgress.MultiBar(
   cliProgress.Presets.shades_grey
 );
 
-const program = new Command().requiredOption(
-  "-n, --number <number>",
-  "Number of parallel processes"
-);
+const program = new Command()
+  .description("Render images in parallel")
+  .requiredOption("-n, --number <number>", "Number of parallel processes");
 
 program.parse();
 const options = program.opts();

@@ -1,4 +1,5 @@
 import { globSync } from "glob";
+import { Command } from "@commander-js/extra-typings";
 import fs from "fs";
 import {
   convertFromNftMetadata,
@@ -7,6 +8,12 @@ import {
 } from "../src/attributes/io";
 import { NftMetadata } from "../src/types";
 import logger from "../src/logger";
+
+const program = new Command().description(
+  "Re-generate the summaries based on the current metadata on disk"
+);
+
+program.parse();
 
 const attributes = loadAttributes();
 const tokenIdMatcher = /(\d+)\.json$/;

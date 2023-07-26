@@ -106,3 +106,20 @@ This will render all of the images at full size into `output/images`. One common
 ```
 yarn composite-images -s 1024
 ```
+
+If you have a large collection, you can speed up the render process by using the parallelized renderer. You have to specify how many workers you want to render at the same time, so I recommend using the number of threads your CPU can handle and subtract 1 or 2. For example, on an M1 Macbook Pro, I would recommend 8 workers:
+
+```
+yarn composite-images-parallel -n 8
+```
+
+## Running tests
+
+Fateweaver comes with a short set of tests that you can use to make sure everything is working as expected. They can be run by simply running `yarn test`. The built-in tests will check:
+
+1. Do you have assets defined?
+2. Do your assets (that are expected to be picked as a trait) have a trait probability defined?
+3. Does an asset match 1 and only 1 trait rule?
+4. Does the generated metadata have any duplicates?
+
+If you want, you can add more tests to check the output of your collection as you go!

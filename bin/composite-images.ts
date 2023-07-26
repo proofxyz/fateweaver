@@ -13,6 +13,7 @@ const progressBar = new cliProgress.SingleBar(
 );
 
 const program = new Command()
+  .description("Render images based on the metadata on disk")
   .option("-n, --number <numbers...>", "Process specific token IDs")
   .option("--startFrom <number>", "Start processing from a specific token ID")
   .option("-s, --size <number>", "Resize the output image")

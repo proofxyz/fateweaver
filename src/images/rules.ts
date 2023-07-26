@@ -1,16 +1,5 @@
-import { EditableLayer, LayerSet } from "./layers";
 import { LAYER_RULES } from "../../config/images/rules";
-import { globToRegex } from "../glob";
-
-/**
- * Given an array of string matchers
- */
-export function repeatImageRule(
-  matchers: string[],
-  func: (layers: LayerSet, layer: EditableLayer) => void
-) {
-  return Object.fromEntries(matchers.map((matcher) => [matcher, func]));
-}
+import { LayerSet } from "./layers";
 
 export function applyLayerRules(layerSet: LayerSet) {
   const newLayerSet = LayerSet.clone(layerSet);
@@ -31,30 +20,4 @@ export function applyLayerRules(layerSet: LayerSet) {
   }
 
   return newLayerSet;
-}
-
-export function formatImageRules(
-  rules: Record<string, (layers: LayerSet, layer: EditableLayer) => void>
-) {
-  const newRules: Map<
-    RegExp,
-    (layers: LayerSet, layer: EditableLayer) => void
-  > = new Map();
-
-  for (const [key, value] of Object.entries(rules)) {
-    newRules.set(globToRegex(key), value);
-  }
-
-  return newRules;
-}
-
-export function formatBlendRules(
-  rules: Record<string, GlobalCompositeOperation>
-) {
-  const newRules: Map<RegExp, GlobalCompositeOperation> = new Map();
-  for (const [key, value] of Object.entries(rules)) {
-    newRules.set(globToRegex(key), value);
-  }
-
-  return newRules;
 }

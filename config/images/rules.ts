@@ -1,4 +1,4 @@
-import { formatImageRules } from "../../src/images/rules";
+import { formatImageRules } from "../../src/images/util";
 
 /**
  * Every output consists of a set of layers. Each layer is a single asset that is composited
