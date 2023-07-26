@@ -1,3 +1,4 @@
+import { Command } from "@commander-js/extra-typings";
 import fs from "fs";
 import {
   convertFromNftMetadata,
@@ -9,6 +10,10 @@ import {
 import { NftMetadata } from "../src/types";
 import cliProgress from "cli-progress";
 import { processFinalAttributeSet } from "../config/attributes/transform";
+
+new Command()
+  .description("Re-generate the final metadata from the internal metadata")
+  .parse();
 
 const files = fs.readdirSync("./output/internal");
 const progressBar = new cliProgress.SingleBar(

@@ -19,6 +19,9 @@ import { generateAttributeSet } from "../src/attributes/generate";
 import { processFinalAttributeSet } from "../config/attributes/transform";
 
 const program = new Command()
+  .description(
+    "Search for duplicate outputs and regenerate them using the PRNG until no duplicate remains"
+  )
   .option("-s, --seed <string>", "Seed for random number generator")
   .parse();
 

@@ -26,6 +26,9 @@ const progressBar = new cliProgress.SingleBar(
 );
 
 const program = new Command()
+  .description(
+    "Generate random metadata based on the PRNG seed and the set of defined rules"
+  )
   .requiredOption(
     "-n, --number <number>",
     "Number of attribute sets to generate"

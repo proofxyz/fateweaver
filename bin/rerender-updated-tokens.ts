@@ -1,8 +1,15 @@
+import { Command } from "@commander-js/extra-typings";
 import { spawnSync } from "child_process";
 import cliProgress from "cli-progress";
 import { generateImageFromAttributes } from "../src/images/generate";
 import { loadAttributesFromDisk } from "../src/images/io";
 import logger from "../src/logger";
+
+new Command()
+  .description(
+    "Using git, re-render all tokens whose metadata has changed since the last commit"
+  )
+  .parse();
 
 const progressBar = new cliProgress.SingleBar(
   {},

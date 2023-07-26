@@ -8,7 +8,6 @@
     "dev": "tsc --watch",
     "lint": "yarn eslint . --ext .ts",
     "test": "yarn jest",
-    "format-assets": "node dist/bin/format-assets.js",
     "generate-attributes": "node dist/bin/generate-attributes.js",
     "regenerate-duplicates": "node dist/bin/regenerate-duplicates.js",
     "reprocess-metadata": "node dist/bin/reprocess-metadata.js",
