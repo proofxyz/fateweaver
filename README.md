@@ -113,6 +113,26 @@ If you have a large collection, you can speed up the render process by using the
 yarn composite-images-parallel -n 8
 ```
 
+### Command reference
+
+Here's a list of all the commands you can run with Fateweaver:
+
+- `yarn build`: Build the project.
+- `yarn dev`: Build the project and watch for changes.
+- `yarn generate-attributes`: Generate a set of attributes and write them to disk.
+- `yarn composite-images`: Render the generated attributes into images.
+- `yarn composite-images-parallel`: Render the generated attributes into images using multiple workers.
+- `yarn calculate-summary`: Summaries are automatically generated after attribute generation, but you can manually re-generate them with this command.
+- `yarn clean`: Delete all contents of the output folder.
+- `yarn clean:images`: Delete only the images in the output folder.
+- `yarn search`: Search the collection metadata for tokens that match all of the given traits.
+- `yarn regenerate-duplicates`: Scan the collection to find duplicates and re-generate them until none remain.
+- `yarn reprocess-metadata`: Run the internal metadata through your transformers to re-create the final metadata output.
+- `yarn rerender-updated-tokens`: Using git, re-render only the outputs that have changed since the last commit.
+- `yarn package`: Package the entire output (images and final metadata) into a single ZIP file.
+- `yarn package:chunks`: Package the output into multiple ZIP files, each containing a chunk of the collection.
+- `yarn test`: Run the test suite against your assets and output.
+
 ## Running tests
 
 Fateweaver comes with a short set of tests that you can use to make sure everything is working as expected. They can be run by simply running `yarn test`. The built-in tests will check:
