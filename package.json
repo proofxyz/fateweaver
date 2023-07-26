@@ -3,6 +3,10 @@
   "description": "A complete library for generating randomized NFT outputs with rules.",
   "version": "1.0.0",
   "license": "MIT",
+  "author": {
+    "name": "Ryan LeFevre",
+    "email": "ryan@proof.xyz"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
